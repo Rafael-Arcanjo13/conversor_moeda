@@ -19,6 +19,9 @@ public class Historico {
 
     @Override
     public String toString() {
-        return "[" + data.getDayOfMonth() + "/" + data.getMonthValue() + "/" + data.getYear() + "] " + valor + " " + moedaBase + " => " + String.format("%.2f", valorConvertido) + " " + moedaDestino + " | Taxa: " + String.format("%.2f", taxa);
+        return "[" + data.getDayOfMonth() + "/" + data.getMonthValue() + "/" + data.getYear() + " "
+                + data.getHour() + ":" + data.getMinute() + ":" + data.getSecond() + "] "
+                + valor + " " + moedaBase + " => " + String.format("%.2f", valorConvertido) + " " + moedaDestino
+                + " | Taxa: " + String.format("%.2f", taxa);
     }
 }
