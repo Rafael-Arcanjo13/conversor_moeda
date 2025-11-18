@@ -18,6 +18,40 @@ O programa permite converter valores entre diferentes moedas em tempo real, util
 
 ---
 
+## 📝 Histórico de Conversões (Nova Funcionalidade!)
+
+Toda vez que uma conversão é realizada, o programa registra:
+
+📅 Data e hora da conversão
+
+💵 Valor original digitado
+
+💱 Moeda de origem e moeda de destino
+
+📈 Taxa de conversão aplicada
+
+💰 Valor convertido final
+
+---
+
+## 📂 Estrutura do Projeto
+
+📦 ConversorDeMoedas
+
+ ┣ 📜 Principal.java          → Menu interativo e lógica principal
+ 
+ ┣ 📜 ConsultaApi.java        → Responsável pelas requisições HTTP usando HttpClient
+ 
+ ┣ 📜 Moeda.java              → Record representando os dados recebidos da API
+ 
+ ┣ 📜 Historico.java          → Classe que armazena cada conversão realizada
+ 
+ ┣ 📜 LocalDateTimeAdapter    → Adaptador para serializar datas no JSON (Gson)
+ 
+ ┗ 📄 historicoConversao.json → Arquivo gerado automaticamente com seu histórico
+
+---
+
 ## 🧠 Conceitos Aplicados
 
 Este projeto foi criado com o propósito de consolidar os seguintes conceitos:
